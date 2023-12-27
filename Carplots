@@ -1,0 +1,8 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+data = pd.read_csv('carpricetraining.csv')
+plt.bar(data['Year'], data['Kilometers_Driven'])
+plt.xlabel('Year')
+plt.ylabel('Kilometers_Driven')
+plt.title('Bar Plot')
+plt.show()
